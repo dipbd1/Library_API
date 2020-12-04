@@ -24,6 +24,6 @@ app.use(express.json());
 app.use(userRouter);
 app.use(onlyBook);
 
-app.listen(port, () => {
+app.listen(process.env.PORT || 8080, () => {
     console.log('Server runing on: ' + port)
 })
